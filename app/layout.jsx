@@ -3,9 +3,10 @@ import "./globals.css";
 import { Montserrat, Poppins } from 'next/font/google';
 import { aeronaut } from "./font";
 import Navbar from "@/components/Navbar";
-// import MobileNavbar from "@/components/MobileNavbar"
 import Footer from "@/components/Footer"
 import MobileNavbar from "@/components/MobileNavbar";
+import Head from "next/head";
+
 
 
 const geistSans = Geist({
@@ -43,9 +44,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
+<Head>
+          <link rel="icon" href="/favicon.ico" />  {/* Favicon link yahan daalein */}
+        </Head>
         <MobileNavbar className="block md:hidden"/>
         <Navbar className="hidden md:block"/>
-        {/* <MobileNavbar className="block md:hidden"/> */}
         {children}
         <Footer/>
       </body>
