@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import Image from 'next/image';
 
 
 export default function HeroSlider() {
@@ -54,12 +53,9 @@ export default function HeroSlider() {
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${i === current ? 'opacity-100' : 'opacity-0'}`}
             aria-hidden={i !== current}
           >
-            <Image
+            <img
               src={src}
               alt=""
-              fill
-              priority={i === 0}
-              sizes="100vw"
               className="object-cover object-center select-none"
             />
           </div>

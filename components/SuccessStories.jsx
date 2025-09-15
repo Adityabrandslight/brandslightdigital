@@ -99,7 +99,7 @@ const SuccessStories = () => {
               <div className="mb-4 flex items-start justify-between">
                 <div className="flex items-center gap-3">
                   <div className="relative h-10 w-10 overflow-hidden rounded-full bg-gray-100 ring-1 ring-gray-200">
-                    <Image
+                    <img
                       src={r.avatar}
                       alt={`${r.name} avatar`}
                       fill
@@ -153,10 +153,9 @@ const SuccessStories = () => {
                   <div className="mb-4 flex items-start justify-between">
                     <div className="flex items-center gap-3">
                       <div className="relative h-10 w-10 overflow-hidden rounded-full bg-gray-100 ring-1 ring-gray-200">
-                        <Image
+                        <img
                           src={r.avatar}
                           alt={`${r.name} avatar`}
-                          fill
                           className="object-contain"
                         />
                       </div>

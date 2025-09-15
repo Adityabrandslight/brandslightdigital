@@ -60,7 +60,7 @@ export default function Footer() {
           <ul className="space-y-2">
             <li><Link href="/privacy" className="hover:text-amber-700">Privacy Policy</Link></li>
             <li><Link href="/terms" className="hover:text-amber-700">Terms & Conditions</Link></li>
-            <li><Link href="/refund-policy" className="hover:text-amber-700">Refund Policy</Link></li>
+            <li><Link href="/legal/refund-policy" className="hover:text-amber-700">Refund Policy</Link></li>
             <li><Link href="/sitemap" className="hover:text-amber-700">Sitemap</Link></li>
           </ul>
         </div>

@@ -1,17 +1,14 @@
 // app/not-found.tsx
-import Image from "next/image";
 import Link from "next/link";
 
 export default function NotFound() {
   return (
     <main className="flex h-screen w-full flex-col items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-black text-gray-100 px-4 text-center">
       <div className="relative w-72 h-28 mb-8">
-        <Image
+        <img
           src="/coming-soon.png" // put your image in /public folder
           alt="Lost in space illustration"
-          fill
           className="object-contain"
-          priority
         />
       </div>
 

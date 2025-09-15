@@ -33,9 +33,7 @@ const Process = () => {
   return (
     <section className="py-4 px-4 w-full bg-gray-50">
       <div className="max-w-[1400px] mx-auto">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+        <div
           className="text-center mb-4"
         >
           <span className="inline-block px-4 py-2 bg-yellow-100 text-yellow-800 rounded-full font-bold text-sm mb-2">
@@ -51,15 +49,11 @@ const Process = () => {
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
             Transparent process that delivers measurable results every quarter.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {steps.map((step, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.1 }}
+            <div
               className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100"
             >
               <div className={`${step.color} mb-6`}>{step.icon}</div>
@@ -67,7 +61,7 @@ const Process = () => {
                 {step.title}
               </h3>
               <p className="text-gray-700">{step.desc}</p>
-            </motion.div>
+            </div>
           ))}
         </div>
       </div>

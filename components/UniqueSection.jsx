@@ -1,6 +1,5 @@
 
 'use client'
-import Image from 'next/image';
 import React from 'react';
 import CountUp from 'react-countup';
 
@@ -10,17 +9,15 @@ const UniqueSection = () => {
       <div className="flex flex-col lg:flex-row items-center gap-2 max-w-[1400px] mx-auto">
         {/* Left Image */}
         <div className="w-full lg:w-1/2 relative flex justify-center">
-          <Image
+          <img
             src="/images/unique.png"
             alt="Person on phone"
-            width={450}
-            height={200}
             className="z-10 relative"
           />
         </div>
 
         {/* Right Content */}
-        <div className="w-full ">
+        <div className="w-full lg:w-1/2 ">
           <p className="text-orange-500 font-semibold mb-2">What Makes Us Unique?</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-black">
             Our offbeat Marketing solutions drive dollars to your bank accounts.

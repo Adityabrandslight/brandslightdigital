@@ -53,12 +53,10 @@ export default function ElegantFormPopup({ isOpen, onClose }) {
         <div className="flex max-h-[90vh] flex-col overflow-hidden md:flex-row">
           {/* Image side */}
           <div className="relative hidden w-full md:block md:w-5/12">
-            <Image
+            <img
               src="/form image.jpg"
               alt="Contact Illustration"
-              fill
               className="object-cover"
-              priority
             />
             <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-amber-200/60 via-amber-100/30 to-white/90" />
             <div className="absolute left-4 top-4 rounded-full bg-amber-100 px-3 py-1 text-sm font-semibold text-amber-700 ring-1 ring-amber-300">

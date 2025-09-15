@@ -44,13 +44,13 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}
       >
-<Head>
-          <link rel="icon" href="/favicon.ico" />  {/* Favicon link yahan daalein */}
+        <Head>
+          <link rel="icon" href="/logo/favicon.ico" />  {/* Favicon link yahan daalein */}
         </Head>
-        <MobileNavbar className="block md:hidden"/>
-        <Navbar className="hidden md:block"/>
+        <MobileNavbar className="block md:hidden" />
+        <Navbar className="hidden md:block" />
         {children}
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
